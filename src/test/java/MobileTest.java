@@ -11,16 +11,16 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-/**
- * This class contains an Appium test to automate Wikipedia search functionality on an Android device/emulator.
- */
-public class AppiumTest {
+
+  // This class contains an Appium test to automate Wikipedia search functionality on an Android device/emulator.
+ 
+public class MobileTest {
     
     private AndroidDriver driver;
 
-    /**
-     * Setup method to initialize the Appium driver with desired capabilities before running the tests.
-     */
+    
+    // Setup method to initialize the Appium driver with desired capabilities before running the tests.
+     
     @BeforeClass
     public void setup() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
@@ -35,9 +35,9 @@ public class AppiumTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    /**
-     * Test case to validate the Wikipedia search functionality.
-     */
+    
+    // Test case to validate the Wikipedia search functionality.
+     
     @Test
     public void testWikipediaSearch() {
         // Verify if the search bar is displayed
@@ -64,9 +64,9 @@ public class AppiumTest {
         driver.navigate().back();
     }
 
-    /**
-     * Teardown method to quit the driver after test execution.
-     */
+    
+    // Teardown method to quit the driver after test execution.
+     
     @AfterClass
     public void tearDown() {
         if (driver != null) {
