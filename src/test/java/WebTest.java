@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-public class WebsiteTest {
+public class WebTest {
     private static final String BASE_URL = "https://www.saucedemo.com/";
     private WebDriver driver;
     private WebDriverWait wait;
