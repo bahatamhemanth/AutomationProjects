@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-public class apiTest {
+public class ApiTest {
     // Base API URL
     private static final String BASE_URL = "https://dummyjson.com/products";
 
