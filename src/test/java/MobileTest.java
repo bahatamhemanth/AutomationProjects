@@ -19,7 +19,7 @@ public class MobileTest {
     private AndroidDriver driver;
 
     
-    // Setup method to initialize the Appium driver with desired capabilities before running the tests.
+    // The setup method is used to initialize the Appium driver with the appropriate capabilities before to running the tests.
      
     @BeforeClass
     public void setup() throws MalformedURLException {
